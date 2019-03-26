@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2ed5e98d48b4438192616534bfc48e65" Name="Diagram1">
+        <EntityTypeShape EntityType="AddressBookModel.Country" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.State" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AddressBookModel.UserDetail" Width="1.5" PointX="2" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="AddressBookModel.FK_State_To_state" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="AddressBookModel.Addressbook" Width="1.5" PointX="5.25" PointY="2.5" />
+        <AssociationConnector Association="AddressBookModel.FK_Addressbook_To_State" />
+        <AssociationConnector Association="AddressBookModel.FK_Addressbook_To_UserDetails" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
